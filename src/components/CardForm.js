@@ -42,7 +42,7 @@ const CardForm = () => {
             <label htmlFor="" className="label">Cost</label>
             <input
               className='input is-expanded'
-              value={cost || 0}
+              value={cost || ''}
               onChange={handleCostChange}
               type="number"
             />
