@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CardForm from './components/CardForm';
+import CardList from './components/CardList';
+import CardSearch from './components/CardSearch';
+import CardValue from './components/CardValue';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <CardForm/>
+        <CardList/>
+        <CardSearch/>
+        <CardValue/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
