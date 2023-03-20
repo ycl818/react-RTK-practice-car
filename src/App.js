@@ -7,10 +7,10 @@ import CardValue from './components/CardValue';
 
 const App = () => {
   return (
-    <div>
+    <div className='container is-fuild'>
         <CardForm/>
-        <CardList/>
         <CardSearch/>
+        <CardList/>
         <CardValue/>
     </div>
   )
